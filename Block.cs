@@ -8,7 +8,7 @@ namespace CSharpChainModel
 {
 	public class Block
 	{
-		public string PreviousHash;
+		public string PrvHash;
 		public DateTime TimeStamp;
 		public List<Transaction> Transactions;
 		public string Hash;
@@ -17,7 +17,7 @@ namespace CSharpChainModel
 		public Block(DateTime timeStamp, List<Transaction> transactions, string previousHash)
 		{
 			this.TimeStamp = timeStamp;
-			this.PreviousHash = previousHash;
+			this.PrvHash = previousHash;
 			this.Transactions = transactions;
 			this.Hash = "";
 			this.Nonce = 0;
